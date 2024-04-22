@@ -1,0 +1,8 @@
+server:
+  port: 8088
+  
+#It will allow to look for the configuration file in the application itself.  
+spring:
+  profiles:  
+    active:
+    - native

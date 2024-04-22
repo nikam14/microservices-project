@@ -1,0 +1,14 @@
+server:
+  port: 8081
+  
+#It specifies the url to connect service registry and it can change according to situations.  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  
+      
+#this below line will make sure 100% data is published to zipkin server.      
+management: 
+  tracing:       
+    sampling:
+      probability: 1.0
